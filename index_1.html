@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/private.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   </head> 
   <body>
@@ -163,7 +162,7 @@
         <div class="slide">
           <div class="container">
             <div class="slogan">
-              <h2 class="title">Проект в подарок!</h2>
+              <h2 class="title">Проект <br class="br-mobile">в подарок!</h2>
               <h3 class="subtitle">Платите только за строительство вашего дома</h3>
               <button class="see-more f16 btn-prime">Узнать больше</button>
             </div>
@@ -204,7 +203,7 @@
           <div class="col-md-12">
             <a href="#" class="scroll-btn"></a>
             <h2 class="construct-title">Строительство домов в Крыму</h2>
-            <h2 class="construct-price">от <span>10 000</span> руб/м2</h2>
+            <h2 class="construct-price">от <span>10 000</span> руб/м<sup>2</sup></h2>
             <p class="construct-text f18">Это комплексное строительство объектов любой сложности и масштабности,<br> проектирование и составление сметной документации сдача объектов заказчику<br> и ввод в эксплуатацию с согласованием в необходимых инстанциях</p>
             <hr class="construct-line">
             <h3 class="construct-secondTitle">Цены на индивидуальное строительство</h3>
@@ -217,10 +216,10 @@
 
     <section class="index-constBlocks">
       <div class="container">
-        <div class="row">
+        <div class="row project-slide">
           <div class="col-md-4 col-xs-4">
-            <div class="project project_top" data-bottom="1">
-              <img src="img/project_1.jpg" alt="базовая">
+            <div class="project project_top" data-bottom="1" data-sort="1">
+              <div class="img img-1"></div>
               <h2 class="f24 title">Базовая</h2>
 
               <p class="price">
@@ -249,8 +248,8 @@
               </div>
             </div>
 
-            <div class="project" id="p1">
-              <img src="img/project_2.jpg" alt="базовая">
+            <div class="project" id="p1" data-sort="4">
+              <div class="img img-2"></div>
               <h2 class="f24 title">Уют</h2>
 
               <p class="price">
@@ -280,8 +279,8 @@
             </div>
           </div>
           <div class="col-md-4 col-xs-4">
-            <div class="project project_top" data-bottom="2">
-              <img src="img/project_3.jpg" alt="базовая">
+            <div class="project project_top" data-bottom="2" data-sort="2">
+              <div class="img img-3"></div>
               <h2 class="f24 title">Эконом</h2>
 
               <p class="price">
@@ -310,8 +309,8 @@
               </div>
             </div> 
 
-             <div class="project" id="p2">
-              <img src="img/project_4.jpg" alt="базовая">
+             <div class="project" id="p2" data-sort="5">
+              <div class="img img-4"></div>
               <h2 class="f24 title">Комфорт</h2>
 
               <p class="price">
@@ -341,8 +340,8 @@
             </div>
           </div>
           <div class="col-md-4 col-xs-4">
-             <div class="project project_top" data-bottom="3">
-              <img src="img/project_5.jpg" alt="базовая">
+             <div class="project project_top" data-bottom="3" data-sort="3">
+              <div class="img img-5"></div>
               <h2 class="f24 title">Стандарт</h2>
 
               <p class="price">
@@ -371,8 +370,8 @@
               </div>
             </div>
 
-            <div class="project" id="p3">
-              <img src="img/project_6.jpg" alt="базовая">
+            <div class="project" id="p3" data-sort="6">
+              <div class="img img-6"></div>
               <h2 class="f24 title">Премиум</h2>
 
               <p class="price">
@@ -402,7 +401,17 @@
             </div>
           </div>
 
+          
+        </div>
+
+        <div class="row">
           <div class="col-md-12">
+            <div class="constProject-slide-paginator">
+              <ul>
+                  <li class="constProject-slide-prev slide-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></li>
+                  <li class="constProject-slide-next slide-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+              </ul>
+            </div>
             <button class="btn-prime see-more">Посмотреть еще</button>
           </div>
         </div>
@@ -547,10 +556,10 @@
             <div class="col-md-4">
               <img src="img/catalog.png" alt="catalog" class="catalog-img">
             </div>
-            <div class="col-md-5 col-xs-8">
+            <div class="col-md-5 col-xs-8 col-sm-12">
               <p class="text">Мы разработали <span>свыше 100</span><br>  уникальных <span>проектов</span> домов</p>
             </div>
-            <div class="col-md-3 col-xs-4">
+            <div class="col-md-3 col-xs-4 col-sm-12">
               <button class="btn-prime get-catalog">Получить каталог</button>
             </div> 
         
@@ -572,16 +581,16 @@
       </div>
 
         <div class="design-slider">
-          <div data-id="1" data-text="Проектирование<br> частных домов">
+          <div data-id="1" data-text="Проектирование<br> частных домов" >
             <div class="container">
               <div class="row">
-                <div class="col-md-6 col-xs-6">
+                <div class="col-md-6 col-xs-6 col-sm-12">
                   <span class="slide-number">01</span>
                   <h3 class="slider-title">Проектирование частных<br> домов</h3>
                   <p class="slider-slogan">Из простых мелочей и состоит одновременно маленькая и бесконечная<br> вселенная человека. При условии заключения договора на строительство<br> мы возвращаем вам до 100 % стоимости разработки проекта.</p>
                   <button class="btn-prime slide-btn">Узнать больше</button>
                 </div>
-                <div class="col-md-6 col-xs-6">
+                <div class="col-md-6 col-xs-6 col-sm-12">
                   <div class="design-bg"></div>
                   <div class="design-img"></div>
                 </div>
@@ -591,13 +600,13 @@
           <div data-id="2" data-text="Проектирование<br> коммерческих<br> объектов">
             <div class="container">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-6 col-sm-12">
                   <span class="slide-number">02</span>
                   <h3 class="slider-title">Проектирование частных<br> домов</h3>
                   <p class="slider-slogan">Из простых мелочей и состоит одновременно маленькая и бесконечная<br> вселенная человека. При условии заключения договора на строительство<br> мы возвращаем вам до 100 % стоимости разработки проекта.</p>
                   <button class="btn-prime slide-btn">Узнать больше</button>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-6 col-sm-12">
                   <div class="design-bg"></div>
                   <div class="design-img"></div>
                 </div>
@@ -607,13 +616,13 @@
           <div data-id="3" data-text="Архитектурный<br> и эскизные проекты,<br> визуализация">
             <div class="container">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-6 col-sm-12">
                   <span class="slide-number">03</span>
                   <h3 class="slider-title">Проектирование частных<br> домов</h3>
                   <p class="slider-slogan">Из простых мелочей и состоит одновременно маленькая и бесконечная<br> вселенная человека. При условии заключения договора на строительство<br> мы возвращаем вам до 100 % стоимости разработки проекта.</p>
                   <button class="btn-prime slide-btn">Узнать больше</button>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-6 col-sm-12">
                   <div class="design-bg"></div>
                   <div class="design-img"></div>
                 </div>
@@ -623,13 +632,13 @@
           <div data-id="4" data-text="Адаптация проекта<br> под сейсмозону<br> и ваш участок">
             <div class="container">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-6 col-sm-12">
                   <span class="slide-number">04</span>
                   <h3 class="slider-title">Проектирование частных<br> домов</h3>
                   <p class="slider-slogan">Из простых мелочей и состоит одновременно маленькая и бесконечная<br> вселенная человека. При условии заключения договора на строительство<br> мы возвращаем вам до 100 % стоимости разработки проекта.</p>
                   <button class="btn-prime slide-btn">Узнать больше</button>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-6 col-sm-12">
                   <div class="design-bg"></div>
                   <div class="design-img"></div>
                 </div>
@@ -639,13 +648,13 @@
           <div data-id="5" data-text="Отопление<br> и вентиляция">
             <div class="container">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-6 col-sm-12">
                   <span class="slide-number">05</span>
                   <h3 class="slider-title">Проектирование частных<br> домов</h3>
                   <p class="slider-slogan">Из простых мелочей и состоит одновременно маленькая и бесконечная<br> вселенная человека. При условии заключения договора на строительство<br> мы возвращаем вам до 100 % стоимости разработки проекта.</p>
                   <button class="btn-prime slide-btn">Узнать больше</button>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-6 col-sm-12">
                   <div class="design-bg"></div>
                   <div class="design-img"></div>
                 </div>
@@ -690,31 +699,31 @@
         <div class="row">
           <div class="col-md-12">
             <div class="const-slider">
-              <div>
+              <div class="slide">
                 <div class="slide-wrapp">
                   <img src="img/construction_1.jpg" alt="const-slide">
                   <h3 class="slide-title f18">Кровельные работы</h3>
                 </div>
               </div>
-              <div>
+              <div class="slide">
                 <div class="slide-wrapp">
                   <img src="img/construction_2.jpg" alt="const-slide">
                   <h3 class="slide-title f18">Строительство индивидуальных домов</h3>
                 </div>
               </div>
-              <div>
+              <div class="slide">
                 <div class="slide-wrapp">
                   <img src="img/construction_3.jpg" alt="const-slide">
                   <h3 class="slide-title f18">Строительство типовых домов</h3>
                 </div>
               </div>
-              <div>
+              <div class="slide">
                 <div class="slide-wrapp">
                   <img src="img/construction_4.jpg" alt="const-slide">
                   <h3 class="slide-title f18">Строительство заборов</h3>
                 </div>
               </div>
-              <div>
+              <div class="slide">
                 <div class="slide-wrapp">
                   <img src="img/construction_5.jpg" alt="const-slide">
                   <h3 class="slide-title f18">Бассейны</h3>
@@ -732,34 +741,34 @@
           <div class="col-md-12">      
             <h2 class="ready-title">Посмотрите дома уже построенные нами</h2>
 
-            <div class="const-slider">
-              <div>
+            <div class="const-slider-2">
+              <div class="slide">
                 <div class="slide-wrapp">
-                  <img src="img/construction_1.jpg" alt="const-slide">
+                  <img src="img/ready_1.jpg" alt="const-slide">
                   <h3 class="slide-title f18">Ст. Балаклава<br> (текущий проект)</h3>
                 </div>
               </div>
-              <div>
+              <div class="slide">
                 <div class="slide-wrapp">
-                  <img src="img/construction_2.jpg" alt="const-slide">
+                  <img src="img/ready_2.jpg" alt="const-slide">
                   <h3 class="slide-title f18">Пальмира</h3>
                 </div>
               </div>
-              <div>
+              <div class="slide">
                 <div class="slide-wrapp">
-                  <img src="img/construction_3.jpg" alt="const-slide">
+                  <img src="img/ready_3.jpg" alt="const-slide">
                   <h3 class="slide-title f18">Садовый домик,<br> Северная 20 км</h3>
                 </div>
               </div>
-              <div>
+              <div class="slide">
                 <div class="slide-wrapp">
-                  <img src="img/construction_4.jpg" alt="const-slide">
+                  <img src="img/ready_4.jpg" alt="const-slide">
                   <h3 class="slide-title f18">Дом под ключ, Гранат</h3>
                 </div>
               </div>
-              <div>
+              <div class="slide">
                 <div class="slide-wrapp">
-                  <img src="img/construction_5.jpg" alt="const-slide">
+                  <img src="img/ready_5.jpg" alt="const-slide">
                   <h3 class="slide-title f18">Частный дом, Голландия (текущий проект)</h3>
                 </div>
               </div>
@@ -779,7 +788,7 @@
       </div>    
       <div class="container contact-content">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-xs-6">
             <h2 class="title">
               Для каждого клиента<br> 
               мы подготавливаем <span>видеоотчет<br> 
@@ -790,10 +799,10 @@
               <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#videoModal"></button>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-xs-6">
             <h2 class="title"><span>Запишитесь на просмотр</span><br> строящихся объекто</h2>
             <p class="slogan">Менеджер свяжется с вами в течение 10 минут!</p>
-
+            
             <form action="" class="form-float">
               <div class="input-wrap">
                 <input type="text" name="" placeholder="Ваше имя" class="name"><span class="is-valid"></span>
@@ -804,7 +813,7 @@
               <button class="form-btn">Отправить заявку</button>
             </form>
           </div>
-          <div class="col-md-12 no-relative">
+          <div class="col-md-12">
             <div class="line-text">или</div>
           </div>
         </div>
@@ -820,32 +829,36 @@
               <a href="#" class="link">все акции</a>
             </div>            
             <div class="text-wrapp">
-              <div class="blocks-img blocks-img-1"></div>
-              <div class="right-block">
-                <span class="date f14">с 1 марта по 1 мая 2017 года</span>
-                <h4 class="subtitle f18">Весеннее предложение!</h4>
-                <p class="text">
-                  В марте - заключайте Договор на строительство дома в комплектации &quot;Базовая&quot;: 
-                </p>
-                <ul class="list">
-                  <li>
-                    <table>
-                      <tr>
-                        <td><span class="dot"></span></td>
-                        <td>Одноэтажному дому - стандартный<br> комплект остекления в подарок!</td>
-                      </tr>
-                    </table>
-                  </li>
-                  <li>
-                    <table>
-                      <tr>
-                        <td><span class="dot"></span></td>
-                        <td> Двухэтажному дому - межэтажная<br> лестница в подарок</td>
-                      </tr>
-                    </table>
-                  </li>
-                </ul>
-              </div>
+              <table>
+                <tr>
+                  <td><div class="blocks-img blocks-img-1"></div></td>
+                  <td>
+                    <span class="date f14">с 1 марта по 1 мая 2017 года</span>
+                    <h4 class="subtitle f18">Весеннее предложение!</h4>
+                    <p class="text">
+                      В марте - заключайте Договор на строительство дома в комплектации &quot;Базовая&quot;: 
+                    </p>
+                    <ul class="list">
+                      <li>
+                        <table>
+                          <tr>
+                            <td><span class="dot"></span></td>
+                            <td>Одноэтажному дому - стандартный<br> комплект остекления в подарок!</td>
+                          </tr>
+                        </table>
+                      </li>
+                      <li>
+                        <table>
+                          <tr>
+                            <td><span class="dot"></span></td>
+                            <td> Двухэтажному дому - межэтажная<br> лестница в подарок</td>
+                          </tr>
+                        </table>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
             </div>            
           </div>
           <div class="col-md-4">
@@ -854,14 +867,21 @@
               <a href="#" class="link">архив</a>
             </div>            
             <div class="text-wrapp">
-              <div class="blocks-img blocks-img-2"></div>
-              <div class="right-block">
-                <span class="date f14">1 января 2017</span>
-                <h4 class="subtitle f18">Компания «Новый Свет» начинает строительство домов из полистиролбетона</h4>
-                <p class="text">
-                  Компания «Новый Свет» расширяет<br> возможности строительства, предлагая<br> клиентам все более доступные проекты.<br> Сегодня мы внедряем инновационный<br> высокотехнологичный материал— <br>полистиролбетон.
-                </p>
-              </div>  
+              
+              <table>
+                <tr>
+                  <td>
+                    <div class="blocks-img blocks-img-2"></div>
+                  </td>
+                  <td>
+                    <span class="date f14">1 января 2017</span>
+                    <h4 class="subtitle f18">Компания «Новый Свет» начинает строительство домов из полистиролбетона</h4>
+                    <p class="text">
+                      Компания «Новый Свет» расширяет<br> возможности строительства, предлагая<br> клиентам все более доступные проекты.<br> Сегодня мы внедряем инновационный<br> высокотехнологичный материал— <br>полистиролбетон.
+                    </p>
+                  </td>
+                </tr>
+              </table>  
             </div>   
           </div>
           <div class="col-md-4">
@@ -870,10 +890,12 @@
               <a href="#" class="link">все отзывы</a>
             </div>            
             <div class="text-wrapp">
+
+              <div class="video-img">
+                <div class="play-btn"></div>
+              </div>
               <div class="right-block">
-                <div class="video-img">
-                  <div class="play-btn"></div>
-                </div>
+                
                 <p class="text video-text">
                   Отзыв владельца дома<br>
                   из полистиролбетона, построенного<br>
