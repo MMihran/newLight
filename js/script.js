@@ -32,14 +32,14 @@ $(document).ready(function () {
 			//SEARCH_TABLET
 			moveElem("append", ".header-search", ".header-top");
 			//MENU_TABLET
-			moveElem("prepend", ".header .megamenu", ".header-top-menu .container");
+			moveElem("prepend", ".header .megamenu", ".header-top-menu .col-md-12");
 			$(".megamenu.nav>li>a").addClass("tb_menu_item");
 			check = 1;
 		}else{
 			//SEARCH_TABLET
-			moveElem("prepend", ".header-search", ".header-bot .container");
+			moveElem("prepend", ".header-search", ".header-bot .col-md-12");
 			//MENU_TABLET
-			moveElem("append", ".header .megamenu", ".header-bot .container");
+			moveElem("append", ".header .megamenu", ".header-bot .col-md-12");
 			$(".megamenu.nav>li>a").removeClass("tb_menu_item");
 			check = 2;		
 		}
