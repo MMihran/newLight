@@ -178,7 +178,7 @@ PRIVATE_SLIDER
 }
 
 .private-nav-slider .slick-track{
-	max-width: 200px !important;
+	width: 200px !important;
 	transform: none !important;
 }
 
@@ -612,12 +612,8 @@ PRIVATE_SCHEME
 
 
 @media only screen and (max-width : 1200px) {
-	.title-h2, 
-	.block-seo .seo-head{
+	.title-h2{
 		font-size: 36px;
-	}
-	.sample-h2{
-		font-size: 24px;
 	}
 	.block-banner .banner-title{
 		margin: 20px 0 35px;
@@ -625,9 +621,6 @@ PRIVATE_SCHEME
 	.block-banner .text-box{
 		width: 640px;
 	}
-	/*==========
-	PRIVATE_TABLET
-	==========*/
 	.private-advantages {
 		margin-top: 0;
 	}
@@ -664,9 +657,6 @@ PRIVATE_SCHEME
 	}
 	.private-nav-slider .more-photo a{
 		color: #b1006b;
-	}
-	.private-nav-slider .slick-disabled{
-		pointer-events: none;
 	}
 	.private-nav-slider .nav-next, 
 	.private-nav-slider .nav-prev{
@@ -705,7 +695,7 @@ PRIVATE_SCHEME
 		padding: 0 !important;
 	}
 	.private-nav-slider .slick-track{
-		max-width: 99999px !important;
+		width: 1700px !important;
 	}
 	.private-opt-slider{
 		width: 100%;
@@ -721,67 +711,10 @@ PRIVATE_SCHEME
 	.private-opt-slider .slider-opt-wrap:last-child:nth-child(odd){
 		width: 100%;
 	}
-	.private-statistics .list-item{
-		width: 340px;
-		margin: 20px 10px 0;
-		height: 240px;
-	}
-	.private-statistics .list-item br{
-		display: none;
-	}
-	.private-faq h2{
-		font-size: 30px;
-	}
-	.private-offer .img-wrap,
-	.private-offer .text-wrap{
-		float: none;
-		display: block;
-		height: 220px;
-		overflow: hidden;
-		position: relative;
-	}
-	.private-offer .img-wrap img{
-		width: 100%;
-	}
-	.private-offer .offer-item{
-		padding: 0 10px;
-	}
-	.private-offer .row{
-		margin: 0 -25px;
-	}
-	.private-scheme .items-wrap{
-		margin-top: 45px;
-		background-image: url(../img/priv-scheme-bg-tablet.png);
-		background-position: center 45%;
-		overflow: hidden;
-		margin-bottom: -130px;
-	}
-	.private-scheme .items-wrap .row{
-		background: none;
-		padding: 0;
-		background: url(../img/priv-scheme-bg-tablet.png) no-repeat center 40%;
-	}
-	.private-scheme .scheme-item{
-		margin-bottom: 130px;
-		position: relative;
-	}
-	.private-scheme .scheme-item:after{
-		content: "";
-		display: inline-block;
-		height: 21px;
-		width: 25px;
-		background: url(../img/priv-scheme-arr.png) no-repeat;
-		position: absolute;
-		top: 60px;
-		right: -15px;
-	}
-	.private-scheme .items-wrap .row + .row{
-		margin-top: 0;
-	}
 
-	.private-prices + .block-apply-form b{
-		display: inline;
-	}
+
+
+
 	.block-apply-form b{
 		font-family: "GothamProMedium";
 		display: block;
@@ -791,16 +724,8 @@ PRIVATE_SCHEME
 		margin-top: 25px;
 	}
 
-	.block-seo {
-		padding: 45px 0 70px;
-	}
 
 
-	.private-prices{
-		overflow-y: hidden;
-		padding-bottom: 200px;
-		margin-bottom: -110px;
-	}
 	.private-prices .row{
 		padding-bottom: 10px;
 		text-align: center;
@@ -811,7 +736,7 @@ PRIVATE_SCHEME
 		padding: 0 25px;
 		margin-bottom: 35px;
 	}
-	/*.slick-slide{
+	.slick-slide{
 		width: 225px;
-	}*/
+	}
 }
